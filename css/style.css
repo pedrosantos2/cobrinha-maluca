@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.corpo {
+    background: url("../img/f92ed099a1026eb7a659539320b9440c--foi-memes.jpg");
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#pontuacao{
+    position: absolute;
+    top: 30px;
+    right: 100px;
+    font-size: 55px;
+    font-weight: bold;
+    font-family: Noto Sans JP;
+    color: azure;
+ text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+}
+
+div#board{
+    width: 90vh;
+    height: 90vh;
+    background: linear-gradient(rgba(255, 0, 0, 0.712), rgba(255, 255, 0, 0.705));
+    border: 7px double;
+    display: grid;
+    box-shadow: 3px 3px 5px orangered;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+    
+}
+
+div.head{
+    
+    background: url("../img/a9805ce3d929f4c532bce2b71fa07396.png");
+    border: 1px solid black;
+    transform: scale(1.02);
+    border-radius: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+div.snake{
+   
+    background: linear-gradient(purple, red);
+    border: 1px dashed;
+    border-radius: 15px;
+}
+
+div.fruta{
+
+    background: url("../img/ddcw3vz-fbbdb42b-5378-4929-99c5-18deb56484c7.png");
+    border: 1px dashed aquamarine;
+    border-radius: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
